@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <meta charset="UTF-8"/>
+        <title>Home</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <main class="mainlogobraca">
+                <div class="divlogo">
+                    <button id="toggleButton" class="buttonBarraDeTarefas"> 
+                        <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="toggle">
+                            <div class="bars" id="bar1"></div>
+                            <div class="bars" id="bar2"></div>
+                            <div class="bars" id="bar3"></div>
+                            </label>
+                        </button>
+                </div>
+            </main>
+                <main class="mainbutton">
+                
+                <div class="divbuttonlogin">
+                     <img src="./Imagens/icone.png" class="IconeLogin">
+                </div>
+                </main>
+        </header>
+        <main class="corpo">
+            <div class="corpo2" id="corpo2">
+                <div id="taskbar"  class="animation-element">
+                     <ul>
+                        <div class="DivlogoBT">
+                            <img src="./Imagens/logosf.png" class="logoBt">
+                        </div>
+                         <div class="divlinks">
+                         <li class="liBt"><img src="./Imagens/home.png" class="homeBt"><button class="linkBarraDeTarefas"><b><font class="fontBt">HOME</font></b></button></li>
+                         </div>
+                         
+                         <div class="divlinks">
+                         <li class="liBt"><img src="./Imagens/CadastroDeClientes.png" class="homeBt"><button class="linkBarraDeTarefas"><font class="fontBt">Cadastro de Cliente</font></button></li>
+                         </div>
+                         
+                         <div class="divlinks">
+                         <li class="liBt"><img src="./Imagens/CadastroDeProduto.png" class="homeBt"><button class="linkBarraDeTarefas"><font class="fontBt">Cadastro de Produto</font></button></li>
+                         </div>
+                         
+                         <div class="divlinks">
+                             <li class="liBt"><img src="./Imagens/ControleDePedido.png" class="homeBt"><button class="linkBarraDeTarefas"> <font class="fontBt">Controle de Pedido</font></button></li>
+                         </div>
+                         
+                         <div class="divlinks">
+                             <li class="liBt"><img src="./Imagens/GestaoDeEstoque.png" class="homeBt"><button class="linkBarraDeTarefas"><font class="fontBt">Gestão de Estoque</font></button></li>
+                         </div>
+                         <div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/ControleFinanceiro.png" class="homeBt"><button class="linkBarraDeTarefas"><font class="fontBt">Controle Financeiro</font></button></li>
+                        </div>
+                        <div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/Relatorios.png" class="homeBt"><button class="linkBarraDeTarefas"><font class="fontBt">Relatórios</font></button></li>
+                        </div>
+                     </ul>
+                 </div>
+                 </div>
+
+            <div class="CorpoPrincipal">
+
+                <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+                <script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+                <script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+                <div id="chartdiv"></div>
+            
+                <div class="select-wrapper">
+                    <select id="selectWrapper" onchange="enviarDados()">
+                      <option value="clientes">Vendas</option>
+                      <option value="vendas">Clientes</option>
+                      <option value="lucro">Lucro</option>
+                    </select>
+                  </div>
+            </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

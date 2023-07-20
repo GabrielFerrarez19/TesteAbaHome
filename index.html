@@ -1,0 +1,244 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css"/>
+        <meta charset="UTF-8"/>
+        <title>Cadastro de Cliente</title>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <main class="mainlogobraca">
+                <div class="divlogo">
+                    <button id="toggleButton" class="buttonBarraDeTarefas"> 
+                        <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="toggle">
+                            <div class="bars" id="bar1"></div>
+                            <div class="bars" id="bar2"></div>
+                            <div class="bars" id="bar3"></div>
+                            </label>
+                        </button>
+                </div>
+            </main>
+                <main class="mainbutton">
+                
+                <div class="divbuttonlogin">
+                     <img src="./Imagens/icone.png" class="IconeLogin">
+                </div>
+                </main>
+        </header>
+        <main class="corpo">
+            <div class="corpo2" id="corpo2">
+                <div id="taskbar"  class="animation-element">
+                     <ul>
+                        <div class="DivlogoBT">
+                            <img src="./Imagens/logosf.png" class="logoBt">
+                        </div>
+                         <div class="divlinks">
+                         <li class="liBt"><img src="./Imagens/home.png" class="homeBt"><button class="linkBarraDeTarefas"><b><font class="fontBt">HOME</font></b></button></li>
+                         </div>
+                         
+                         <div class="divlinks">
+                         <li class="liBt"><img src="./Imagens/CadastroDeClientes.png" class="homeBt"><button class="linkBarraDeTarefas"><font class="fontBt">Cadastro de Cliente</font></button></li>
+                         </div>
+                         
+                         <div class="divlinks">
+                         <li class="liBt"><img src="./Imagens/CadastroDeProduto.png" class="homeBt"><button class="linkBarraDeTarefas"><font class="fontBt">Cadastro de Produto</font></button></li>
+                         </div>
+                         
+                         <div class="divlinks">
+                             <li class="liBt"><img src="./Imagens/ControleDePedido.png" class="homeBt"><button class="linkBarraDeTarefas"> <font class="fontBt">Controle de Pedido</font></button></li>
+                         </div>
+                         
+                         <div class="divlinks">
+                             <li class="liBt"><img src="./Imagens/GestaoDeEstoque.png" class="homeBt"><button class="linkBarraDeTarefas"><font class="fontBt">Gestão de Estoque</font></button></li>
+                         </div>
+                         <div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/ControleFinanceiro.png" class="homeBt"><button class="linkBarraDeTarefas"><font class="fontBt">Controle Financeiro</font></button></li>
+                        </div>
+                        <div class="divlinks">
+                            <li class="liBt"><img src="./Imagens/Relatorios.png" class="homeBt"><button class="linkBarraDeTarefas"><font class="fontBt">Relatórios</font></button></li>
+                        </div>
+                     </ul>
+                 </div>
+                 </div>
+
+            <div class="CorpoPrincipal">
+
+                <div class="container">
+                    <aside>
+                        <div class="toggle">
+
+                            <div class="close" id="close-btn">
+                                <span class="material-icons-sharp">
+                                    close
+                                </span>
+                            </div>
+                        </div>
+
+
+                    </aside>
+
+                    <main>
+                        <h1>Analytics</h1>
+                        <div class="analyse">
+                            <div class="sales">
+                                <div class="status">
+                                    <div class="info">
+                                        <h3>Total Usuarios</h3>
+                                        <h1>&nbsp;10</h1>
+                                    </div>
+                                    <div class="progresss">
+                                        <svg>
+                                            <circle cx="38" cy="38" r="36"></circle>
+                                        </svg>
+                                        <div class="percentage">
+                                            <p>+81%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="visits">
+                                <div class="status">
+                                    <div class="info">
+                                        <h3>Total de Processos Ativos</h3>
+                                        <h1>24,981</h1>
+                                    </div>
+                                    <div class="progresss">
+                                        <svg>
+                                            <circle cx="38" cy="38" r="36"></circle>
+                                        </svg>
+                                        <div class="percentage">
+                                            <p>-48%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="searches">
+                                <div class="status">
+                                    <div class="info">
+                                        <h3>Clientes no SISZAP</h3>
+                                        <h1>14,147</h1>
+                                    </div>
+                                    <div class="progresss">
+                                        <svg>
+                                            <circle cx="38" cy="38" r="36"></circle>
+                                        </svg>
+                                        <div class="percentage">
+                                            <p>+21%</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        
+                        <div class="new-users">
+                            <div class="user-list">
+                                <canvas id="lineChart" width="400" height="200"></canvas>
+                            </div>
+                        </div>
+                    </main>
+
+                    <div class="right-section">
+                        <div class="nav">
+                            <button id="menu-btn">
+                                <span class="material-icons-sharp">
+                                    menu
+                                </span>
+                            </button>
+
+
+                            <div class="profile">
+                                <div class="info">
+                                    <p>ola, <b>NomeDoUsuario</b></p>
+                                    <small class="text-muted">Admin</small>
+                                </div>
+                                <div class="profile-photo">
+                                    <img src="images/profile-1.jpg">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="user-profile">
+                            <div class="logo">
+                                <img src="images/login.png">
+                                <h2>Josiane Pereira</h2>
+                                <p>Advogada</p>
+                            </div>
+                        </div>
+
+                        <div class="reminders">
+                            <div class="header">
+                                <h2>Lembretes</h2>
+                                <span class="material-icons-sharp">
+                                    notifications_none
+                                </span>
+                            </div>
+
+                            <div class="notification">
+                                <div class="icon">
+                                    <span class="material-icons-sharp">
+                                        volume_up
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <div class="info">
+                                        <h3>Workshop</h3>
+                                        <small class="text_muted">
+                                            08:00 AM - 12:00 PM
+                                        </small>
+                                    </div>
+                                    <span class="material-icons-sharp">
+                                        more_vert
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="notification deactive">
+                                <div class="icon">
+                                    <span class="material-icons-sharp">
+                                        edit
+                                    </span>
+                                </div>
+                                <div class="content">
+                                    <div class="info">
+                                        <h3>Workshop</h3>
+                                        <small class="text_muted">
+                                            08:00 AM - 12:00 PM
+                                        </small>
+                                    </div>
+                                    <span class="material-icons-sharp">
+                                        more_vert
+                                    </span>
+                                </div>
+                            </div>
+
+                            <div class="notification add-reminder">
+                                <div>
+                                    <span class="material-icons-sharp">
+                                        add
+                                    </span>
+                                    <h3>Add Lembrete</h3>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+
+               
+            
+            </main>
+            
+        <script src="script.js"></script>
+    </body>
+</html>

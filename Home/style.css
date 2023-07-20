@@ -1,0 +1,683 @@
+body{  
+    padding:0px;
+	margin:0px;
+	background-color:none;
+    display:contents;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*style cabeçalho*/
+
+
+/*style botao teste*/
+
+.inscrever-button {
+    appearance: none;
+    background-color:#bb0b0b ;
+    border: 0.125em solid #bb0b0b;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   .inscrever-button:disabled {
+    pointer-events: none;
+   }
+   
+   .inscrever-button:hover {
+    color: #fff;
+    background-color: #d80d0d;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   .inscrever-button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+   .login-button {
+    appearance: none;
+    background-color: #bb0b0b ;
+    border: 0.125em solid #bb0b0b;
+    border-radius: 0.9375em;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 3.75em;
+    min-width: 0;
+    outline: none;
+    padding: 1em 2.3em;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    will-change: transform;
+   }
+   
+   .login-button:disabled {
+    pointer-events: none;
+   }
+   
+   .login-button:hover {
+    color: #fff;
+    background-color: #d80d0d;
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+   }
+   
+   .login-button:active {
+    box-shadow: none;
+    transform: translateY(0);
+   }
+
+.cabecalho{
+	width:100%;
+    background-color: #bb0b0b;
+	height:15vh;
+    display: flex;
+    position:sticky;
+    top:0;
+    left:0;
+	z-index: 99999;
+}
+
+.IconeLogin{
+  width: 50px;
+  margin-right: 20px;
+}
+
+.divlogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+    height: 120px;
+}
+
+.logo{
+	width:110px;
+	margin-bottom:10px;
+}
+
+.mainlogobranca{
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.mainbutton{
+	display: flex;
+	align-items: center;
+	width: 100%;
+    justify-content: flex-end;
+}
+
+/*@media (max-width: 600px) {
+    .mainbutton {
+        width: 90%;
+        max-width: none;
+    }
+}
+
+.login-button {
+	min-width:0px;
+    padding: 10px 60px;
+    background-color:transparent;
+    color:white;
+    border: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-color:white;
+    border: 1px solid white;
+
+}
+
+.login-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.login-button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .login-button {
+        padding: 5px 30px;
+        font-size: 0.8em;
+    }
+}
+
+*/
+.divbuttonlogin{
+	margin:20px;
+}
+/*
+.inscrever-button {
+    padding: 10px 60px;
+    background-color: transparent;
+    color:white;
+    border: 20px;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+	border-color:rgba(0, 169, 191, 0.5);
+	border: 1px solid rgba(0, 169, 191, 0.5);
+}
+
+.inscrever-button:hover {
+    background-color: rgba(0, 169, 191, 0.5) ;
+}
+
+.inscrever-button:active {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .inscrever-button {
+        padding: 5px 25px;
+        font-size: 0.8em;
+    }
+}
+
+*/.buttonBarraDeTarefas{
+    background-color: transparent;
+    border: none;
+
+}
+
+#checkbox {
+  display: none;
+  border: none;
+}
+
+.toggle {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition-duration: .5s;
+}
+
+.bars {
+  width: 100%;
+  height: 4px;
+  background-color:white;
+  border-radius: 4px;
+}
+
+#bar2 {
+  transition-duration: .8s;
+}
+
+#bar1,#bar3 {
+  width: 70%;
+}
+
+#checkbox:checked + .toggle .bars {
+  position: absolute;
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar2 {
+  transform: scaleX(0);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar1 {
+  width: 100%;
+  transform: rotate(45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle #bar3 {
+  width: 100%;
+  transform: rotate(-45deg);
+  transition-duration: .5s;
+}
+
+#checkbox:checked + .toggle {
+  transition-duration: .5s;
+  transform: rotate(180deg);
+}
+
+/*style corpo*/
+
+
+.corpo{
+  display: flex;
+  top:20px;
+  background-color:white;
+  flex-direction: row;
+}
+
+.corpo2{
+  display: none;
+  height: 85vh;
+  width:264px;
+  z-index: 0;
+  top:20px;
+  justify-content:start;
+  align-items:start;
+  background-color: #bb0b0b;
+}
+
+.corpo2{
+  opacity: 0;
+}
+
+.corpo2.animation2-in {
+  animation: slide-in 1s ease-in-out forwards;
+}
+
+.corpo2.animation2-out {
+  animation: slide-out 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+.CorpoPrincipal{
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  border:none;
+  flex-wrap: wrap;
+}
+
+
+
+#chartdiv {
+  width: 100%;
+  height: 500px;
+}
+
+/*style barra de tarefas*/
+
+#taskbar {
+  display: none;
+  position: fixed;
+  height: 500px;
+  width: 180px;
+  background-color: transparent;
+  z-index: 99999;
+  padding: 0px;
+  justify-content: end;
+  margin-left: 10px;
+}
+
+#taskbar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#taskbar ul li {
+  margin-bottom: 0px;
+}
+
+.animation-element {
+  opacity: 0;
+}
+
+.animation-element.animation-in {
+  animation: slide-in 1s ease-in-out forwards;
+}
+
+.animation-element.animation-out {
+  animation: slide-out 1s ease-in-out forwards;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 1;
+  }
+}
+
+.DivlogoBT{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.logoBt{
+  width: 160px;
+  margin-left: 34px;
+}
+
+.homeBt{
+  width: 25px;
+}
+
+.liBt{
+  display: flex;
+  align-items: center;
+  color: #fff;
+}
+
+.fontBt{
+  color: white;
+}
+
+/*.animation-element {
+  animation: slide-in 1s ease-in-out;
+}
+
+@keyframes slide-in {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}*/
+
+/*.animation-element {
+  animation: slide-out 1s ease-in-out;
+}
+
+@keyframes slide-out {
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}*/
+
+
+.linkBarraDeTarefas {
+      min-width:0px;
+      background-color:transparent;
+      color:black;
+      border-radius: 15px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      border-color:transparent;
+      width: 100%;
+      height: 40px;
+      align-items: center;
+  
+}  
+
+.divlinks{
+    padding: 5px;
+    width: 100%;
+    border-radius: 15px;
+    height: auto;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.linha{
+  height: 1px;
+  width: 100%;
+  padding: 5px;
+}
+
+
+
+
+
+.divlinks:hover {
+background-color: rgb(223, 27, 27);
+}
+
+.divlinks:active {
+  background-color: rgba(231, 19, 19, 0.3);
+}
+
+
+
+
+/*style rodape*/
+
+
+
+/* corpo principal */ 
+
+.container {
+  margin: 0 auto;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-group label {
+display: block;
+  font-weight: bold;
+  }
+
+
+.form-group select {
+  width: 100%;
+padding: 5px;
+}
+
+.divbotao {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  height: 100px;
+  align-items: flex-end;
+}
+
+.divh22 {
+  display: flex;
+  justify-content: center;
+  margin-right: 50px;
+}
+
+.divh2 {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+
+.sexo {
+  width: 1000px;
+padding: 5px;
+}
+
+.classnav {
+  display: flex;
+  align-content: center;
+  width: 600px;
+  justify-content: space-between;
+  margin-left: 10px;
+}
+
+nav{
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 600px;
+}
+
+.divall {
+  width: 200px;
+}
+
+.buttonmeu {
+  display: flex;
+  height: 3em;
+  width: 100px;
+  align-items: center;
+  justify-content: center;
+  background-color: #eeeeee4b;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  border: 1;
+  background: #fff;
+  margin: 10px;
+}
+
+.buttonmeu > svg {
+margin-right: 5px;
+margin-left: 5px;
+font-size: 20px;
+transition: all 0.4s ease-in;
+}
+
+.buttonmeu:hover > svg {
+font-size: 1.2em;
+transform: translateX(-5px);
+}
+
+.buttonmeu:hover {
+box-shadow: 9px 9px 33px #d1d1d1, -9px -9px 33px #ffffff;
+transform: translateY(-2px);
+}
+
+/* input */ 
+
+.in {
+  max-width: 190px;
+  height: 44px;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.label {
+  display: block;
+  margin-bottom: .3rem;
+  font-size: .9rem;
+  font-weight: bold;
+  color: black;
+  transition: color .3s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.in:hover, .in:focus, .input-group:hover .in {
+  outline: none;
+  border-color: #05060f;
+}
+
+.in-group:hover .label, .in:focus {
+  color: #05060fc2;
+}
+
+.selectin {
+  max-width: 190px;
+  height: 44px;
+  background-color: #05060f0a;
+  border-radius: .5rem;
+  padding: 0 1rem;
+  border: 2px solid transparent;
+  font-size: 1rem;
+  transition: border-color .3s cubic-bezier(.25,.01,.25,1) 0s, color .3s cubic-bezier(.25,.01,.25,1) 0s,background .2s cubic-bezier(.25,.01,.25,1) 0s;
+}
+
+.select-wrapper{
+  width: 100%;
+}
+
+.select-wrapper {
+  position: relative;
+  width: 200px;
+}
+
+.select-wrapper select {
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
